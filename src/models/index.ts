@@ -1,0 +1,23 @@
+export { default as User } from "./User";
+export { default as Paket } from "./Paket";
+export { default as Artikel } from "./Artikel";
+export { default as Testimonial } from "./Testimonial";
+export { default as Settings } from "./Settings";
+export { default as Galeri } from "./Galeri";
+export { default as HeroSlide } from "./HeroSlide";
+export { default as Team } from "./Team";
+export { default as Promo } from "./Promo";
+export { default as Feature } from "./Feature";
+export { default as Review } from "./Review";
+
+export type { IUser } from "./User";
+export type { IPaket, IItinerary, IKotaHarga } from "./Paket";
+export type { IArtikel } from "./Artikel";
+export type { ITestimonial } from "./Testimonial";
+export type { ISettings } from "./Settings";
+export type { IGaleri } from "./Galeri";
+export type { IHeroSlide } from "./HeroSlide";
+export type { ITeam } from "./Team";
+export type { IPromo } from "./Promo";
+export type { IFeature } from "./Feature";
+export type { IReview } from "./Review";
