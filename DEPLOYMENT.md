@@ -965,6 +965,23 @@ A       www     123.456.789.10      Automatic
 - [ ] CORS headers configured correctly
 - [ ] No error stack traces shown to users
 
+### SEO & Search Console Setup:
+- [ ] **Access robots.txt**: `https://yourdomain.com/robots.txt`
+- [ ] **Access sitemap.xml**: `https://yourdomain.com/sitemap.xml`
+- [ ] **Login Admin** → Menu **SEO Settings**
+- [ ] **Edit robots.txt** (optional, default sudah optimal)
+- [ ] **Exclude halaman** yang tidak perlu di-index (contoh: `/admin`, `/login`)
+- [ ] **Set default priority & changefreq** untuk sitemap
+- [ ] **Google Search Console**:
+  - Buka [search.google.com/search-console](https://search.google.com/search-console)
+  - Add property → Domain atau URL prefix
+  - Verify ownership (via DNS record atau HTML file)
+  - Submit sitemap: `sitemap.xml`
+- [ ] **Test Social Media Preview**:
+  - Share link di WhatsApp (harus muncul logo + deskripsi)
+  - Facebook Debugger: [developers.facebook.com/tools/debug](https://developers.facebook.com/tools/debug/)
+  - Twitter Card Validator: [cards-dev.twitter.com/validator](https://cards-dev.twitter.com/validator)
+
 ### Performance Testing:
 - [ ] Homepage load time < 3 seconds
 - [ ] Admin dashboard load time < 2 seconds
