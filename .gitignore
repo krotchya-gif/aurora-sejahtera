@@ -46,3 +46,9 @@ nul
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# dokumentasi lokal
+CLAUDE.md
+DEPLOYMENT.md
+DEPENDENCY_UPDATE.md
+MONGODB_TEST_RESULT.md
