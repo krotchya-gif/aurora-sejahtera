@@ -7,15 +7,6 @@ import { generateUniqueSlug } from "@/lib/utils";
 import { paketSchema, validateRequest } from "@/lib/validations";
 import { checkWriteRateLimit } from "@/lib/rate-limit";
 
-// MongoDB Query Interface for Paket
-interface PaketQuery {
-  slug?: string;
-  kategori?: string;
-  tipe?: string;
-  isPromo?: boolean;
-  isActive?: boolean;
-}
-
 // GET - Fetch all pakets (public)
 export async function GET(request: NextRequest) {
   try {
@@ -30,7 +21,7 @@ export async function GET(request: NextRequest) {
     const limit = searchParams.get("limit");
 
     // Build query
-    const query: PaketQuery = {};
+    const query: Record<string, unknown> = {};
 
     // Filter by slug (for detail page)
     if (slug) {

@@ -13,10 +13,10 @@ export const paketSchema = z.object({
   slug: z.string().optional(),
   destinasi: z.string().min(2, "Destinasi minimal 2 karakter"),
   kategori: z.enum(["domestik", "internasional", "umroh"], {
-    errorMap: () => ({ message: "Kategori harus: domestik, internasional, atau umroh" }),
+    message: "Kategori harus: domestik, internasional, atau umroh",
   }),
   tipe: z.enum(["open-trip", "private-trip"], {
-    errorMap: () => ({ message: "Tipe harus: open-trip atau private-trip" }),
+    message: "Tipe harus: open-trip atau private-trip",
   }),
   harga: z.number().min(0, "Harga tidak boleh negatif"),
   hargaCoret: z.number().min(0, "Harga coret tidak boleh negatif").optional(),
@@ -50,7 +50,7 @@ export const paketSchema = z.object({
   jumlahReview: z.number().int().min(0, "Jumlah review tidak boleh negatif").optional().default(0),
   isPromo: z.boolean().optional().default(false),
   season: z.enum(["normal", "high"], {
-    errorMap: () => ({ message: "Season harus: normal atau high" }),
+    message: "Season harus: normal atau high",
   }).optional().default("normal"),
   isActive: z.boolean().optional().default(true),
 });
